@@ -1,0 +1,32 @@
+---
+permalink: automation/svm-workflow.html 
+sidebar: sidebar 
+keywords: REST APIs, swagger 
+summary: Para usar credenciales de usuario de SVM para aprovisionar almacenes de datos, las herramientas de ONTAP para VMware vSphere crean volúmenes en el agregado especificado en los almacenes de datos POSTERIORES a la API. 
+---
+= Requisitos de asignación de agregados de SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para usar credenciales de usuario de SVM para aprovisionar almacenes de datos, las herramientas de ONTAP para VMware vSphere crean volúmenes en el agregado especificado en los almacenes de datos POSTERIORES a la API. ONTAP no permite la creación de volúmenes en agregados sin asignar en una SVM usando credenciales de usuario de SVM. Para resolver esto, se deben asignar las SVM con los agregados usando la API de REST o la interfaz de línea de comandos de ONTAP como se describe aquí.
+
+API DE REST DE ONTAP:
+
+[listing]
+----
+PATCH "/api/svm/svms/f16f0935-5281-11e8-b94d-005056b46485"
+'{"aggregates":{"name":["aggr1","aggr2","aggr3"]}}'
+----
+CLI de ONTAP:
+
+[listing]
+----
+sti115_vsim_ucs630f_aggr1 vserver show-aggregates
+AvailableVserver Aggregate State Size Type SnapLock
+Type
+svm_test sti115_vsim_ucs630f_aggr1
+online 10.11GB vmdisk non-snaplock
+----

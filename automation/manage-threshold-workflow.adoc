@@ -1,0 +1,48 @@
+---
+permalink: automation/manage-threshold-workflow.html 
+sidebar: sidebar 
+keywords: REST APIs, swagger 
+summary: Un flujo de trabajo es una secuencia de uno o más pasos necesarios para lograr una tarea u objetivo administrativo específico. 
+---
+= Gestionar umbral de almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use la siguiente API de umbral de obtención para recuperar los límites de umbral de almacenamiento configurados para el volumen y el agregado.
+
+[listing]
+----
+GET​/virtualization​/api​/v1​/vcenters​/{vcguid}​/storage-thresholds
+----
+Ejemplos: Obtenga los umbrales de almacenamiento por instancia de vCenter Server en el guid de vCenter
+
+[listing]
+----
+GET "/api/v1/vcenters/beded9ad-6bbb-4c9e-b4c6-691250bfe2da/storage-thresholds"
+----
+Utilice la siguiente alarma de configuración de PARCHES para volumen y agregado para generar notificaciones cuando se alcancen los límites de umbral configurados.
+
+[listing]
+----
+PATCH​/virtualization​/api​/v1​/vcenters​/{vcguid}​/storage-thresholds
+----
+Ejemplos: Actualice los umbrales de almacenamiento por vCenter por guid de vCenter. Los límites predeterminados son del 80% para casi completo y del 90% para completo. Modificación de todos los valores de umbral
+
+[listing]
+----
+{{{}PATCH "/api/v1/vcenters/beded9ad-6bbb-4c9e-b4c6-691250bfe2da/storage-thresholds"
+Request Body
+{
+"volume":
+
+{ "nearly_full_percent": 80, "full_percent": 90 }
+,
+"aggregate": {
+"nearly_full_percent": 80,
+"full_percent": 90
+}
+}{}}}{}
+----

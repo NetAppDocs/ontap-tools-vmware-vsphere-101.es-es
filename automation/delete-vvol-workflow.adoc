@@ -1,0 +1,53 @@
+---
+permalink: automation/delete-vvol-workflow.html 
+sidebar: sidebar 
+keywords: REST APIs, swagger 
+summary: Un flujo de trabajo es una secuencia de uno o más pasos necesarios para lograr una tarea u objetivo administrativo específico. 
+---
+= Elimine el almacén de datos vVols
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Existe un almacén de datos vVols, siempre que haya al menos un volumen FlexVol disponible en el almacén de datos. Si desea eliminar un almacén de datos vVols de un clúster de alta disponibilidad, primero debe desmontar el almacén de datos de todos los hosts del clúster de alta disponibilidad y, a continuación, eliminar la carpeta _.vsphere-HA_ residente manualmente mediante la interfaz de usuario del servidor de vCenter.
+
+* Pasos*
+
+Use la siguiente API para eliminar el almacén de datos vVols.
+
+[listing]
+----
+DELETE
+​/virtualization​/api​/v1​/vcenters​/{vcguid}​/vvols​/datastores​/{moref}
+----
+Ejemplos
+
+* Elimine el almacén de datos vVols y elimine los volúmenes del almacenamiento
+
+
+[listing]
+----
+  DELETE /api/v1/vcenters/cdded9ad-6bsd-4c9e-b44g-691250bfe2df/vvols/datastores/datastore-28?delete_volumes=true
+----
+
+NOTE: El flujo de trabajo Delete vVols Datastore elimina los volúmenes de los almacenes de datos si se superó la marca delete_volume como true con independencia de si se gestiona o no el volumen del almacén de datos.
+
+* Elimine el almacén de datos vVols y no elimine volúmenes del almacenamiento
+
+
+[listing]
+----
+  DELETE /api/v1/vcenters/cdded9ad-6bsd-4c9e-b44g-691250bfe2df/vvols/datastores/datastore-28?delete_volumes=false
+----
+Respuesta:
+
+[listing]
+----
+{
+
+    "id": "1889"
+
+}
+----

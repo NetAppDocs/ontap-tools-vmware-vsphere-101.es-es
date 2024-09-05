@@ -1,0 +1,116 @@
+---
+permalink: concepts/ontap-tools-concepts-terms.html 
+sidebar: sidebar 
+keywords:  
+summary: En la siguiente sección se describen los conceptos y términos clave utilizados en el documento. 
+---
+= Conceptos y términos clave
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En la siguiente sección se describen los conceptos y términos clave utilizados en el documento.
+
+
+
+=== Entidad de certificación (CA)
+
+CA es una entidad de confianza que emite certificados SSL (Secure Sockets Layer).
+
+
+
+=== Pila doble
+
+Una red de pila doble es un entorno de red que admite el uso simultáneo de direcciones IPv4 e IPv6.
+
+
+
+=== Alta disponibilidad
+
+Los nodos en clúster están configurados en pares de alta disponibilidad para realizar operaciones no disruptivas.
+
+
+
+=== Número de unidad lógica (LUN)
+
+Una LUN es un número utilizado para identificar una unidad lógica dentro de una red de área de almacenamiento (SAN). Estos dispositivos direccionables suelen ser discos lógicos a los que se accede a través del protocolo de Interfaz de Sistemas de Computadoras Pequeñas (SCSI) o uno de sus derivados encapsulados.
+
+
+
+=== Gestor de herramientas de ONTAP
+
+El administrador de herramientas de ONTAP proporciona un mayor control a las herramientas de ONTAP para el administrador de VMware vSphere a través de las instancias gestionadas de vCenter Server y los back-ends de almacenamiento incorporados. ONTAP tools Manager ayuda en la gestión de instancias de vCenter Server, back-ends de almacenamiento, certificados, contraseñas y descargas de paquetes de registros.
+
+
+
+=== Open Virtual Appliance (OVA)
+
+OVA es un estándar abierto para empaquetar y distribuir dispositivos virtuales o software que deben ejecutarse en máquinas virtuales.
+
+
+
+=== SnapMirror activo (SMAS)
+
+La sincronización activa de SnapMirror permite que los servicios empresariales continúen funcionando incluso si se produce un fallo completo del sitio, lo que permite a las aplicaciones conmutar por error de forma transparente mediante una copia secundaria. Se requiere intervención manual ni secuencias de comandos personalizadas para activar una recuperación tras fallos con SnapMirror: Sincronización activa.
+
+
+
+=== Adaptador de replicación de almacenamiento (SRA)
+
+SRA es el software específico del proveedor de almacenamiento que se instala en el dispositivo SRM. El adaptador habilita la comunicación entre Site Recovery Manager y una controladora de almacenamiento en el nivel de Storage Virtual Machine (SVM) y la configuración a nivel del clúster.
+
+
+
+=== Máquina virtual de almacenamiento (SVM)
+
+Al igual que una máquina virtual que se ejecuta en un hipervisor, la SVM es una entidad lógica que abstrae los recursos físicos. SVM contiene volúmenes de datos y una o varias LIF a través de los cuales proporcionan datos a los clientes.
+
+
+
+=== Sistema de archivos de máquina virtual (VMFS)
+
+VMFS es un sistema de archivos en clúster diseñado específicamente para almacenar archivos de máquinas virtuales en entornos de VMware vSphere.
+
+
+
+=== Volúmenes virtuales (vVols)
+
+VVols proporciona una abstracción en el nivel de volumen para el almacenamiento utilizado por una máquina virtual. Incluye varios beneficios y ofrece una alternativa al uso de una LUN tradicional. Un almacén de datos VVOL suele estar asociado con una única LUN que actúa como contenedor para los vVols.
+
+
+
+=== Política de almacenamiento de máquinas virtuales
+
+Las políticas de almacenamiento de máquinas virtuales se crean en vCenter Server en Políticas y perfiles. Para vVols, cree un conjunto de reglas mediante reglas del proveedor de tipo de almacenamiento NetApp vVols.
+
+
+
+=== VMware Site Recovery Manager (SRM)
+
+SRM proporciona continuidad empresarial, recuperación ante desastres, migración de sitios y funcionalidades de prueba sin interrupciones para entornos virtuales de VMware.
+
+
+
+=== API de VMware vSphere para detección de almacenamiento (VASA)
+
+VASA es un conjunto de API que integran cabinas de almacenamiento con vCenter Server para su gestión y administración. La arquitectura se basa en varios componentes, incluido el proveedor VASA, que gestiona la comunicación entre VMware vSphere y los sistemas de almacenamiento.
+
+
+
+=== API de almacenamiento VMware vSphere - Integración de cabina (VAAI)
+
+VAAI es un conjunto de API que permite la comunicación entre hosts ESXi de VMware vSphere y dispositivos de almacenamiento. Las API incluyen un conjunto de operaciones primitivas que utilizan los hosts para descargar las operaciones de almacenamiento hacia la cabina. VAAI puede proporcionar mejoras de rendimiento significativas para tareas que consumen mucho almacenamiento.
+
+
+
+=== Almacén de datos vVols
+
+El almacén de datos de vVols es una representación lógica de un contenedor de vVols que crea y mantiene un proveedor de VASA.
+
+
+
+=== RPO cero
+
+RPO es la sigla en inglés para el objetivo de punto de recuperación, que es la cantidad de pérdida de datos que se considera aceptable durante un tiempo dado. El RPO de cero significa que no es aceptable ninguna pérdida de datos.

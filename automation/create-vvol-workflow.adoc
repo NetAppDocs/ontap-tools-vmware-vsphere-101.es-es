@@ -1,0 +1,64 @@
+---
+permalink: automation/create-vvol-workflow.html 
+sidebar: sidebar 
+keywords: REST APIs, swagger 
+summary: Un flujo de trabajo es una secuencia de uno o más pasos necesarios para lograr una tarea u objetivo administrativo específico. 
+---
+= Crear el almacén de datos vVols
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible crear un almacén de datos vVols con volúmenes nuevos o con volúmenes existentes. También puede crear un almacén de datos vVols con la combinación de volúmenes existentes y volúmenes nuevos.
+
+
+NOTE: Compruebe que los agregados raíz no se asignen a SVM.
+
+Genere un token JWT antes de crear almacenes de datos o aumente la caducidad del token SAML estableciendo 'Maximum Bearer Token Lifetime' en 60m en vCenter.
+
+Debe pasar x-auth para la API. Puede generar esta x-auth desde la nueva API que se añadió en Auth en Swagger.
+
+/virtualization/api/v1/auth/vcenter-login
+
+. Cree el almacén de datos vVols con el nuevo volumen.
+
+
+Obtenga el ID de agregado, storage_id(svm uuid) mediante la API de REST DE ONTAP. POST /virtualización/api/v1/vcenters/cdded9ad-6bsd-4c9e-b44g-691250bfe2df/vvols/datastores
+
+Utilice el siguiente URI para comprobar el estado:
+
++
+
+[listing]
+----
+`\https://xx.xx.xx.xxx:8443/virtualization/api/jobmanager/v2/jobs/<JobID>?includeSubJobsAndTasks=true`
+----
++ Cuerpo de solicitud para almacén de datos NFS
+
+} «nombre»: «nfsds1 5000», «protocolo»: «nfs», «platform_type»: «AFF», «moref»: «dominio-c8 9273 11ee», «volúmenes»: «thin», «almacenamiento»: }-2048000 200 }-3827
+
+Cuerpo de la solicitud para el almacén de datos iSCSI: { «Nombre» : «iscsi_personalizado», «tipo_plataforma»: «AFF», «moref» : «dominio-C8», «volúmenes» : [ { «is_existing» : falso, «nombre» : «iscsi_personalizado», «tamaño_en_mb» : igroup1 9506, «eficiencia_espacio» «agregado «thin-»: «Nombre_11ee» }-75d6d6iq»: }-8034»: }-bb2d_9f0d6isci_1960 }_e461»: Cree el almacén de datos vVols con volúmenes existentes.
+
+Obtenga aggregate_id y volume_id mediante la API REST DE ONTAP.
+
+ POST /virtualization/api/v1/vcenters/cdded9ad-6bsd-4c9e-b44g-691250bfe2df/vvols/datastores
+Cuerpo de la solicitud
+
+....
+ {
+"name" : "nfsds2",
+"protocol" : "nfs",
+"platform_type": "aff",
+"moref" : "domain-c8",
+"volumes" : [
+    {
+          "is_existing": true,
+          "id": "e632a632-1412-11ee-8a8c-00a09860a3ff"
+        }
+],
+"storage_backend": {
+                    "storage_id": "33a8b6b3-10cd-11ee-8a8c-00a09860a3ff"    }
+....
+}

@@ -1,0 +1,54 @@
+---
+permalink: automation/how-to-access-rest-api.html 
+sidebar: sidebar 
+keywords: REST APIs, swagger 
+summary: Es posible acceder a la API de REST de ONTAP de diferentes maneras. 
+---
+= Cómo acceder a las herramientas de ONTAP para la API de REST DE VMware vSphere
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible acceder a la API de REST de ONTAP de diferentes maneras.
+
+
+
+== Consideraciones sobre la red
+
+Es posible conectarse a la API DE REST a través de las siguientes interfaces:
+
+* LIF de gestión de clústeres
+* LIF de gestión de nodos
+* LIF de gestión de SVM
+
+
+La LIF que opta por utilizar debe configurarse para admitir el protocolo de gestión HTTPS. Además, la configuración del firewall en la red debe permitir el tráfico HTTPS.
+
+
+NOTE: Siempre debe utilizar una LIF de gestión de clúster. Esto equilibrará la carga de las solicitudes de API en todos los nodos y evitará que los nodos estén desconectados o tengan problemas de conectividad. Si tiene configuradas varias LIF de gestión de clústeres, todas son equivalentes en cuanto al acceso a la API DE REST.
+
+
+
+== Página de documentación en línea de las herramientas de ONTAP para la API de VMware vSphere
+
+Puede acceder a Swagger desde el enlace de la página de soporte de las herramientas de NetApp ONTAP para el plugin de VMware vSphere.
+
+El formato de la URL que se usa para acceder a la página de documentación de la versión más reciente de la API es:
+
+`https://<loadbalancer_ip_address>/docs/api`
+
+
+
+== Herramientas y software personalizados
+
+Puede acceder a las herramientas de ONTAP para la API de VMware vSphere a través de cualquiera de las distintas herramientas y lenguajes de programación. Entre las opciones más populares se incluyen Python, Java, Curl y PowerShell. Programa, script o herramienta que usa la API actúa como cliente DE servicios web REST. El uso de un lenguaje de programación permite un conocimiento más profundo de la API y ofrece una oportunidad de automatizar las herramientas de ONTAP para la administración de VMware vSphere.
+
+El formato de la URL básica que se usa para acceder directamente a la versión más reciente de la API es:
+
+`https://<loadbalancer_ip_address>/api`
+
+Para acceder a una versión específica de la API en la que se admiten varias versiones, el formato de la URL es:
+
+`https://<loadbalancer_ip_address>/api/v1`

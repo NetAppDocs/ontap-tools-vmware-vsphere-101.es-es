@@ -1,0 +1,36 @@
+---
+section: automation
+title: Automatización mediante API de REST
+entries:
+- title: Información general de las API de REST
+  url: "/automation/overview-rest-apis.html"
+- title: Cómo acceder a las herramientas de ONTAP para la API de REST DE VMware vSphere
+  url: "/automation/how-to-access-rest-api.html"
+- title: Variables de entrada que controlan una solicitud API
+  url: "/automation/input-variables-control-an-api-request.html"
+- title: Acceda a la documentación de referencia de las herramientas de ONTAP para
+    la API de VMware vSphere a través de la interfaz de usuario de Swagger
+  url: "/automation/how-to-access-rest-api-doc-through-the-swagger-user-interface.html"
+- title: Comience con la API DE REST
+  url: "/automation/get-started-with-the-rest-api.html"
+- title: Flujos de trabajo
+  entries:
+  - title: Detección del almacenamiento
+    url: "/automation/storage-workflow.html"
+  - title: Requisitos de asignación de agregados de SVM
+    url: "/automation/svm-workflow.html"
+  - title: Back-end de almacenamiento incorporado (SVM o clúster) con una instancia
+      de vCenter Server
+    url: "/automation/onboard-svm-workflow.html"
+  - title: Crear el almacén de datos vVols
+    url: "/automation/create-vvol-workflow.html"
+  - title: Montar y desmontar un almacén de datos de vVols
+    url: "/automation/mount-unmount-workflow.html"
+  - title: Expanda o reduzca el almacenamiento de almacén de datos de VVOL
+    url: "/automation/expand-shrink-workflow.html"
+  - title: Elimine el almacén de datos vVols
+    url: "/automation/delete-vvol-workflow.html"
+  - title: Permite gestionar el umbral de almacenamiento
+    url: "/automation/manage-threshold-workflow.html"
+  - title: Gestione el acceso a la red
+    url: "/automation/manage-network-workflows.html"

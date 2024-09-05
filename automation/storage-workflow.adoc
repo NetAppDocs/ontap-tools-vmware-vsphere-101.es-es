@@ -1,0 +1,42 @@
+---
+permalink: automation/storage-workflow.html 
+sidebar: sidebar 
+keywords: REST APIs, swagger 
+summary: Un flujo de trabajo es una secuencia de uno o más pasos necesarios para lograr una tarea u objetivo administrativo específico. 
+---
+= Detección del almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El intervalo de detección puede configurarse como parte del mapa de configuración. La detección programada se ejecuta cada 60 minutos. La API que se proporciona aquí es ejecutar la detección bajo demanda de un back-end de almacenamiento concreto que se agrega en el ámbito local.
+
+Use la siguiente API para ejecutar la detección:
+
+[listing]
+----
+POST
+/virtualization/api/v1/vcenters/{vcguid}/storage-backends/{id}/discovery-jobs
+----
+
+NOTE: Consulte flujo de trabajo de back-end de almacenamiento integrado (SVM o clúster) y obtenga ID de la respuesta de API de back-end de almacenamiento posterior.
+
+La detección de este extremo de API solo se admite para los back-ends de almacenamiento local en ámbito y no para los back-ends de almacenamiento en ámbito global. Si el tipo de back-end de almacenamiento es cluster, la detección se ejecuta implícitamente para las SVM secundarias. Si el tipo de back-end de almacenamiento es SVM, la detección solo se ejecuta para la SVM seleccionada.
+
+Ejemplo:
+
+Para ejecutar la detección en un back-end de almacenamiento especificado por ID
+
+[listing]
+----
+POST
+/api/v1/vcenters/3fa85f64-5717-4562-b3fc-2c963f66afa6/storage-backends/74e85f64-5717-4562-b3fc-2c963f669dde/discovery-jobs
+----
+Debe pasar x-auth para la API. Puede generar esta x-auth desde la nueva API que se añadió en Auth en Swagger.
+
+[listing]
+----
+/virtualization/api/v1/auth/vcenter-login
+----

@@ -1,0 +1,7 @@
+---
+section: migrate
+title: Migrar herramientas de ONTAP
+entries:
+- title: Migre a las herramientas de ONTAP más recientes para la versión de VMware
+    vSphere
+  url: "/migrate/migrate-to-latest-ontaptools.html"

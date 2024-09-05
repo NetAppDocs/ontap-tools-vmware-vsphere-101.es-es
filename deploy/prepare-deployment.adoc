@@ -1,0 +1,55 @@
+---
+permalink: deploy/prepare-deployment.html 
+sidebar: sidebar 
+keywords:  
+summary: Debe poner en marcha las herramientas de ONTAP para VMware vSphere en el entorno y especificar los parámetros necesarios para poder utilizar el dispositivo. 
+---
+= Preparar la implementación de herramientas de ONTAP para VMware vSphere
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Debe tener en cuenta los requisitos básicos de back-end de almacenamiento, los requisitos de las aplicaciones y la licencia antes de empezar a implementar las herramientas de ONTAP para VMware vSphere. Planificar con antelación la implementación y decidir cómo desea configurar las herramientas de ONTAP para VMware vSphere en su entorno.
+
+
+
+== Preparación para la implementación
+
+A continuación, se muestran las herramientas de ONTAP para los requisitos de VMware vSphere antes de continuar con la implementación:
+
+. Configurar y configurar el entorno de vCenter Server.
+. Descargue el archivo _.ova_.
+. (Opcional) Utilizado para el usuario de automatización - Recopilar el archivo JSON de las colecciones Postman proporcionado por NetApp.
+. Credenciales principales de vCenter Server para implementar el OVA. La contraseña del servidor primario de vCenter no debe contener estos caracteres especiales($, ', ')
+. Asegúrese de que el host o el pool de recursos donde se despliega el OVA tiene los recursos mínimos mencionados en la link:../deploy/sizing-requirements.html["Requisitos previos para implementar herramientas de ONTAP para VMware vSphere"] sección.
+. Las credenciales de inicio de sesión para la instancia de vCenter Server en la cual las herramientas de ONTAP para VMware vSphere se conectarán a después de la implementación para el registro.
+. Elimine la caché del explorador.
+. Para la implementación que no sea de alta disponibilidad, necesita tres direcciones IP libres: Una dirección IP libre para el balanceador de carga y una dirección IP libre para el plano de control de Kubernetes y una dirección IP para el nodo. Para la implementación de alta disponibilidad, junto con estas tres direcciones IP, necesitará dos direcciones IP más para el segundo y el tercer nodo. Los nombres de host deben asignarse a las direcciones IP libres en el DNS antes de asignarlas. Todas las cinco direcciones IP deben estar en la misma VLAN que se ha seleccionado para la implementación.
+. La plantilla de biblioteca de contenido una vez cargada no se debe eliminar después de la implementación, ya que se utilizará durante los reinicios.
+. En una implementación de varios vCenter donde los certificados de CA personalizados son obligatorios, asigne el nombre de dominio en el que se emite el certificado a la dirección IP virtual. Realice una comprobación _nslookup_ en el nombre de dominio para comprobar si el dominio se está resolviendo a la dirección IP deseada. Los certificados se deben crear con el nombre de dominio y la dirección IP de la dirección IP del equilibrador de carga.
+. VLAN compatible con IPv4/IPv6: No se admite Pure IPv6. El modo mixto es compatible con una VLAN que tenga direcciones IPv6 e IPv4.
+. NTP Server, que se proporciona en vCenter Server para sincronización de tiempo.
+. Dirección IP estática Detalles de configuración para el nodo o la máquina virtual donde se implementa el OVA (obligatorio) y otros detalles.
++
+.. Nombre de host de vCenter Server (vCenter donde se implementa OVA)
+.. Nombre de usuario de vCenter Server (vCenter donde se implementa OVA)
+.. Contraseña de vCenter Server (vCenter donde se implementa OVA)
+.. Pool de recursos
+.. LIF de datos (IPv4/IPv6)
+.. LIF de gestión
+.. Nombre de usuario de ONTAP
+.. Contraseña de ONTAP
+.. Nombre de SVM
+.. Protocolo
+.. Las direcciones IP virtuales para el plano de control de Kubernetes.
+.. Lista desplegable HA/SIN HA
+.. Lista de nombres de host
+.. Direcciones IP (cadena)
+.. Nombre de biblioteca de contenido
+.. Nombre de plantilla OVF
+.. Puerta de enlace IPv6 (opcional)
+
+
+

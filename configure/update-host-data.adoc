@@ -1,0 +1,21 @@
+---
+permalink: configure/update-host-data.html 
+sidebar: sidebar 
+keywords:  
+summary: Puede ejecutar una detección bajo demanda en el host ESXi para obtener las actualizaciones más recientes en los datos de almacenamiento. 
+---
+= Actualizar los datos del host
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede ejecutar una detección bajo demanda en el host ESXi para obtener las actualizaciones más recientes en los datos de almacenamiento.
+
+* Pasos*
+
+. En la página de inicio de VMware vSphere Web Client, haga clic en *Hosts and Clusters*.
+. Haga clic con el botón derecho en un host y seleccione *Herramientas de NetApp ONTAP* > *Actualizar datos de host*.
+. En la ventana emergente *Actualizar datos del host*, seleccione *Sí* para reiniciar la detección de todos los sistemas de almacenamiento conectados.
+

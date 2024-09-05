@@ -1,0 +1,74 @@
+---
+permalink: protect/configure-storage-replication-adapter-for-san-environment.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Debe configurar los sistemas de almacenamiento antes de ejecutar el adaptador de replicación de almacenamiento \(SRA\) para el administrador de recuperación de sitios \(SRM\).' 
+---
+= Configure SRA para entornos SAN y NAS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Debe configurar los sistemas de almacenamiento antes de ejecutar el adaptador de replicación del almacenamiento (SRA) para el administrador de recuperación de sitio (SRM).
+
+
+
+== Configure SRA para entornos SAN
+
+*Lo que necesitará*
+
+Debe tener los siguientes programas instalados en el sitio protegido y el sitio de recuperación:
+
+* SRM
++
+La documentación sobre la instalación de SRM se encuentra en el sitio de VMware.
+
++
+https://docs.vmware.com/en/Site-Recovery-Manager/index.html["Documentación de VMware Site Recovery Manager"]
+
+* SRA.
++
+El adaptador está instalado en SRM.
+
+
+
+* Pasos*
+
+. Compruebe que los hosts ESXi principales están conectados a los LUN del sistema de almacenamiento principal en el sitio protegido.
+. Compruebe que LAS LUN se encuentran en iGroups que tienen `ostype` la opción establecida en _vmware_ en el sistema de almacenamiento primario.
+. Comprobar que los hosts ESXi del sitio de recuperación tengan la conectividad iSCSI adecuada a la máquina virtual de almacenamiento (SVM). Los hosts ESXi del sitio secundario deben tener acceso al almacenamiento del sitio secundario, y los hosts ESXi del sitio primario deben tener acceso al almacenamiento del sitio principal.
++
+Puede hacerlo mediante la verificación de que los hosts ESXi tienen LUN locales conectados en la SVM o `iscsi show initiators` el comando en las SVM. Compruebe el acceso a los LUN asignados en el host ESXi para verificar la conectividad de iSCSI.
+
+
+
+
+
+== Configure SRA para entornos NAS
+
+*Lo que necesitará*
+
+Debe tener los siguientes programas instalados en el sitio protegido y el sitio de recuperación:
+
+* SRM
++
+Puede encontrar documentación sobre la instalación de SRM en el sitio de VMware.
+
++
+https://docs.vmware.com/en/Site-Recovery-Manager/index.html["Documentación de VMware Site Recovery Manager"]
+
+* SRA.
++
+El adaptador se instala en el SRM y en el servidor SRA.
+
+
+
+* Pasos*
+
+. Compruebe que los almacenes de datos del sitio protegido contienen máquinas virtuales registradas en vCenter Server.
+. Compruebe que los hosts ESXi del sitio protegido hayan montado los volúmenes NFS exporta de la máquina virtual de almacenamiento (SVM).
+. Compruebe que las direcciones válidas, como la dirección IP, el nombre de host o el FQDN en el que están presentes las exportaciones NFS, se especifican en el campo *direcciones NFS* cuando se utiliza el asistente Array Manager para agregar matrices a SRM.
+. Use `ping` el comando en cada host ESXi del sitio de recuperación para comprobar que el host tenga un puerto VMkernel que pueda acceder a las direcciones IP que se utilizan para servir exportaciones NFS desde la SVM.
+

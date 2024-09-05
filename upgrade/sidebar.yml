@@ -1,0 +1,8 @@
+---
+section: upgrade
+title: Actualice las herramientas de ONTAP
+entries:
+- title: Actualice a la versión más reciente de herramientas de ONTAP
+  url: "/upgrade/upgrade-ontap-tools.html"
+- title: Actualizar códigos de error
+  url: "/upgrade/upgrade-error-codes.html"
