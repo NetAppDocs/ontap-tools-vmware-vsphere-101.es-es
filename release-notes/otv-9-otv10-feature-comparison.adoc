@@ -1,0 +1,40 @@
+---
+permalink: release-notes/otv-9-otv10-feature-comparison.html 
+sidebar: sidebar 
+keywords: release notes, feature, comparison 
+summary: Obtén más información sobre la comparación de características de OTV 9 y OTV 10 
+---
+= Comparación de características de OTV 9 y OTV 10
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Aprenda si migrar de OTV 9 a OTV 10,1 es adecuado para usted. Para obtener la información más actualizada sobre compatibilidad, consulte https://mysupport.netapp.com/matrix["Herramienta de matriz de interoperabilidad de NetApp"^].
+
+[cols="20%,40%,40%"]
+|===
+| Función | Herramientas de ONTAP 9,13 | Herramientas de ONTAP 10,1 
+
+
+| Propuesta de valor clave | Optimiza y simplifica las operaciones del día 0 al día 2 con funcionalidades de seguridad, cumplimiento de normativas y automatización mejoradas | Evolución de las herramientas de ONTAP 10.x hacia la paridad de 9.x mientras aumenta los límites de alta disponibilidad, rendimiento y escalado 
+
+
+| Cualificación de versiones de ONTAP | ONTAP 9.9,1 a ONTAP 9.15,1 | ONTAP 9.12,1 a ONTAP 9.14,1 
+
+
+| Compatibilidad con las versiones de VMware | VSphere 7.x-8.x SRM 8,5-9,0 | VSphere 7.x-8.x SRM 8,7-9,0 
+
+
+| Compatibilidad con protocolos | Almacenes de datos tradicionales: NFS (v3 y v4,1), VMFS (iSCSI y FCP) vVols: ISCSI, FCP, NVMe/FC, NFS v3 | Almacenes de datos tradicionales: NFS (v3 y v4,1), VMFS (iSCSI) vVols: ISCSI, NFS v3 
+
+
+| Escalabilidad | Hosts y equipos virtuales: 300 hosts, hasta 10K equipos virtuales Almacenes de datos: 600 NFS, hasta 50 VMFS, hasta 250 vVols vVols: Hasta 14K | Hosts y máquinas virtuales: 600 hosts vVols: Hasta 140K TB 
+
+
+| Observabilidad | Informes dinámicos de máquinas virtuales y almacenes de datos de rendimiento, capacidad y cumplimiento de normativas de host | Informes dinámicos de máquinas virtuales y almacenes de datos actualizados de rendimiento, capacidad y cumplimiento de normativas de host 
+
+
+| Protección de datos | Replicación de SRA para VMFS y NFS FlexVols basada en replicación para integración de vVols SCV y interoperable para backup | Replicación SRA para iSCSI VMFS y almacenes de datos NFS v3 
+|===

@@ -1610,9 +1610,7 @@
   <block id="8bb83fccb484f1f0daa29d9b57c5cf9a" category="paragraph">Los sistemas de almacenamiento deben ser descubiertos en el sitio protegido y el sitio de recuperación con el estado “habilitado”.</block>
   <block id="cb0b3fe7df304baf3d39da385a4ec459" category="summary">Proporciona información importante sobre esta versión de herramientas de ONTAP para VMware vSphere, incluidas las nuevas funciones y mejoras, los problemas solucionados, los problemas conocidos, las precauciones y las limitaciones.</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="doc">Notas de la versión</block>
-  <block id="01de6d9be7e1aa419839bb0c0de0ebde" category="paragraph">Proporciona información importante sobre esta versión de herramientas de ONTAP para VMware vSphere, incluidos los problemas solucionados, los problemas conocidos, las precauciones y las limitaciones.</block>
   <block id="d8d47cdd0aa1b9e3260a6ad2bc9598dd" category="inline-link">Notas de la versión de ONTAP tools para VMware vSphere 10,1</block>
-  <block id="911c80fcd732f0a19d4f40dbd06d5688" category="paragraph">Para obtener más información, consulte la<block ref="9ee84a1ff5a886dae6e2983552f808e6" category="inline-link-rx"></block>.</block>
   <block id="ea228e7ce90fb22b7336716e47dc7d35" category="summary">En esta página, se describen los códigos de error para la operación de actualización de las herramientas de ONTAP para el sistema VMware vSphere.</block>
   <block id="f804f395829e966ca161a8be7756fec4" category="doc">Actualizar códigos de error</block>
   <block id="b685a928714b09c857b637a88ebe2239" category="paragraph">Es posible que encuentre códigos de error durante la operación de actualización de VMware vSphere en las herramientas de ONTAP. Los códigos de error tienen una longitud de cinco dígitos, donde los dos primeros dígitos representan el script que encontró el problema, y los tres últimos dígitos representan el flujo de trabajo específico dentro de ese script.</block>
@@ -1748,4 +1746,81 @@
   <block id="a239701adb72159a71164b036c18a53a" category="sidebar">Configurar los recursos del sitio de recuperación y protegidos</block>
   <block id="6956cfc9382ccb41c8ac57f99255b409" category="sidebar">Comprobar los sistemas de almacenamiento replicados</block>
   <block id="a2fa58344be7fbd9a2be0320a8df0f77" category="sidebar">Actualice las herramientas de ONTAP</block>
+  <block id="45c0cb8a573040ec3a3c91b49388ce77" category="summary">Obtén más información sobre la comparación de características de OTV 9 y OTV 10</block>
+  <block id="bec34363c22ae7f416bb150033204752" category="doc">Comparación de características de OTV 9 y OTV 10</block>
+  <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link">Herramienta de matriz de interoperabilidad de NetApp</block>
+  <block id="7bbd8ba71af073421f64a911c595d804" category="paragraph">Aprenda si migrar de OTV 9 a OTV 10,1 es adecuado para usted. Para obtener la información más actualizada sobre compatibilidad, consulte<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>.</block>
+  <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">Función</block>
+  <block id="e2e5efdc8b340ced50733afbe15a4fad" category="cell">Herramientas de ONTAP 9,13</block>
+  <block id="ec00f002c530dcfbc3a0e06a58d47937" category="cell">Herramientas de ONTAP 10,1</block>
+  <block id="ab83860ed087a089d00a21810f2a0bf7" category="cell">Propuesta de valor clave</block>
+  <block id="4273cb76acdc3e1de02819d037c77ad4" category="cell">Optimiza y simplifica las operaciones del día 0 al día 2 con funcionalidades de seguridad, cumplimiento de normativas y automatización mejoradas</block>
+  <block id="798f5d4722c6982593d6671eef46371d" category="cell">Evolución de las herramientas de ONTAP 10.x hacia la paridad de 9.x mientras aumenta los límites de alta disponibilidad, rendimiento y escalado</block>
+  <block id="92d3c85edd0fa69062ef2c7cca594814" category="cell">Cualificación de versiones de ONTAP</block>
+  <block id="f69940d2c889c5ba58609514e4ec4bff" category="cell">ONTAP 9.9,1 a ONTAP 9.15,1</block>
+  <block id="d4dcb3d0be17e55a6784a2f961f93bc2" category="cell">ONTAP 9.12,1 a ONTAP 9.14,1</block>
+  <block id="d67ece44624c7aa69b0f38715d1ac2fb" category="cell">Compatibilidad con las versiones de VMware</block>
+  <block id="e14179d4b312d9cfca14436389327be5" category="cell">VSphere 7.x-8.x SRM 8,5-9,0</block>
+  <block id="bcfc58d0493001a6860f0cd2b68840b3" category="cell">VSphere 7.x-8.x SRM 8,7-9,0</block>
+  <block id="30388d1a3ab1a01f6930553a577eb80b" category="cell">Compatibilidad con protocolos</block>
+  <block id="d5ff81a2866c816e348cdd6f08ed39e4" category="cell">Almacenes de datos tradicionales: NFS (v3 y v4,1), VMFS (iSCSI y FCP) vVols: ISCSI, FCP, NVMe/FC, NFS v3</block>
+  <block id="ef79cc3ec55f1ee802c8bef4053dfebe" category="cell">Almacenes de datos tradicionales: NFS (v3 y v4,1), VMFS (iSCSI) vVols: ISCSI, NFS v3</block>
+  <block id="2d215ebfc0280f8163d071454ec7ce01" category="cell">Escalabilidad</block>
+  <block id="250a44c4a8c52c86430d21b997042d19" category="cell">Hosts y equipos virtuales: 300 hosts, hasta 10K equipos virtuales Almacenes de datos: 600 NFS, hasta 50 VMFS, hasta 250 vVols vVols: Hasta 14K</block>
+  <block id="e9ecfce2c9d4f4584ac79acfbd1b505a" category="cell">Hosts y máquinas virtuales: 600 hosts vVols: Hasta 140K TB</block>
+  <block id="31fd0c2c8d388a4cd2c6459234743476" category="cell">Observabilidad</block>
+  <block id="0ae86707597758caa42797b966846966" category="cell">Informes dinámicos de máquinas virtuales y almacenes de datos de rendimiento, capacidad y cumplimiento de normativas de host</block>
+  <block id="e48d3655de549622076e6823dc5953da" category="cell">Informes dinámicos de máquinas virtuales y almacenes de datos actualizados de rendimiento, capacidad y cumplimiento de normativas de host</block>
+  <block id="7e7397a7b79323762c61941fc0e6b5f9" category="cell">Protección de datos</block>
+  <block id="efee7a2d070a492110e424ced07a5cb4" category="cell">Replicación de SRA para VMFS y NFS FlexVols basada en replicación para integración de vVols SCV y interoperable para backup</block>
+  <block id="15449f9a7ac234221e11423d597b85d4" category="cell">Replicación SRA para iSCSI VMFS y almacenes de datos NFS v3</block>
+  <block id="705b94fd1b511a1c9c06a21279f92615" category="paragraph">Descubra las nuevas y mejoradas funciones disponibles en las herramientas de ONTAP para VMware vSphere 10,1.</block>
+  <block id="6157debca7d3f3948f1725114e76924b" category="inline-xref-macro">Novedades de las herramientas de ONTAP para VMware vSphere 10,1</block>
+  <block id="8ad73d2923c566307bb64baa5d027f1e" category="paragraph">Para obtener una lista completa de las nuevas funciones y mejoras, consulte <block ref="ec6dda21da143161509af94ddcaf0c28" category="inline-xref-macro-rx"></block>.</block>
+  <block id="bcc22b06b618a9db830b76770830c578" category="paragraph">Para obtener más información sobre si la migración de herramientas de ONTAP para VMware vSphere 9 a herramientas de ONTAP 10,1 es la adecuada para su puesta en marcha, consulte <block ref="d850f8a270263c8f340a6395269dd624" category="inline-xref-macro-rx"></block>. La migración es compatible con las herramientas de ONTAP para las versiones de VMware vSphere 9.10D2, 9.11D4, 9,12 y 9,13 a las herramientas de ONTAP 10,1.</block>
+  <block id="7c9c963f9e315e09a32dfb79b88d92b8" category="paragraph">Para obtener más información sobre los problemas conocidos y las limitaciones de las herramientas de ONTAP para VMware vSphere 10,1, consulte la<block ref="82f186bdee145660ad8025b64bc47ede" category="inline-link-rx"></block>. Debe iniciar sesión con su cuenta de NetApp o crear una cuenta para acceder a las Notas de la versión.</block>
+  <block id="e5af075103bba1e5e194c9d0c74f1e1f" category="summary">Obtenga más información sobre las nuevas funcionalidades disponibles en OTV 10,1.</block>
+  <block id="246423e206dcb100415831177697c50a" category="doc">Novedades de las herramientas de ONTAP para VMware vSphere 10,1</block>
+  <block id="8531963bc35662f1a07cf43203d718fe" category="paragraph">Descubra las nuevas funcionalidades disponibles en las herramientas de ONTAP para VMware vSphere 10,1.</block>
+  <block id="06933067aafd48425d67bcb01bba5cb6" category="cell">Actualizar</block>
+  <block id="b0c5611cb19744a4ec33c89331b39405" category="inline-xref-macro">Compatibilidad con almacenes de datos NFS y VMFS</block>
+  <block id="ffb43ddccdfa13d155c9c1caa984356b" category="paragraph"><block ref="ffb43ddccdfa13d155c9c1caa984356b" category="inline-xref-macro-rx"></block></block>
+  <block id="9380ed607d330ba78c881d91902634c3" category="paragraph">Esta versión de herramientas de ONTAP para VMware vSphere admite el aprovisionamiento de almacenes de datos vVols mediante VASA Provider y NFS v3 y almacenes de datos VMFS. Se admiten operaciones de almacenes de datos como crear, cambiar el tamaño, montar, desmontar y eliminar. Es posible aprovisionar almacenes de datos VMFS con el protocolo iSCSI. Como administrador de VMware, puede poner en marcha, actualizar y realizar la transición sin problemas de almacenes de datos VMFS iSCSI desde ONTAP tools para VMware vSphere 9.xx versión a versión 10,1. La migración es compatible con las herramientas de ONTAP para las versiones 9.10D2, 9.11D4, 9,12 y 9,13 de VMware vSphere a la versión 10,1.</block>
+  <block id="5203d35baba2192ec7064c99efaaea05" category="inline-xref-macro">Adaptador de replicación de almacenamiento (SRA) para almacenes de datos NFS y VMFS</block>
+  <block id="0fa426525486e0f9f48704272c02a330" category="paragraph"><block ref="0fa426525486e0f9f48704272c02a330" category="inline-xref-macro-rx"></block></block>
+  <block id="81ec9f1750219d01437ad1704321a8b6" category="paragraph">El SRA implementa la recuperación ante desastres (DR) basada en especificación de VMware Site Recovery Manager (SRM). Para almacenes de datos NFS, los volúmenes ONTAP se montan en un host ESXi mediante protocolos NFS v3. Para almacenes de datos VMFS, LOS LUN de ONTAP se montan en el host ESXi mediante el protocolo iSCSI.</block>
+  <block id="a64c2654d429de38182dd3f31b429336" category="paragraph">Las relaciones de ONTAP SnapMirror replican volúmenes y LUN en el sitio de destino. SRA implementa comandos de testFailover, conmutación al respaldo y reprotección invocados desde VMware SRM. Como parte de la implementación, el SRA garantiza que todos los volúmenes y LUN se puedan montar en destino en un incidente de recuperación y que se lean los volúmenes y LUN del sitio secundario para evitar la discrepancia de los datos.</block>
+  <block id="0eb6205a84f241d342824039207edada" category="inline-xref-macro">Compatibilidad con la integración de la interfaz de usuario de vCenter para todos los flujos de trabajo</block>
+  <block id="00a3ed855b5871be3225514c59444830" category="paragraph"><block ref="00a3ed855b5871be3225514c59444830" category="inline-xref-macro-rx"></block></block>
+  <block id="5502bf0cb7f387ad0f190f3aba86e611" category="paragraph">Las herramientas de ONTAP para VMware vSphere 10,1 proporcionan una interfaz gráfica de usuario para flujos de trabajo para ofrecer paridad con las herramientas de ONTAP para versiones de VMware vSphere 9.xx. El complemento remoto admite:</block>
+  <block id="2cd5ab289151bc93d2cd5a851ce5a182" category="inline-xref-macro">Observabilidad y supervisión de almacenes de datos NFS, VMFS y vVols</block>
+  <block id="ba3288b0f3737dfc12d3d0725b45cba7" category="list-text"><block ref="ba3288b0f3737dfc12d3d0725b45cba7" category="inline-xref-macro-rx"></block></block>
+  <block id="ec8e7f7786f83bd5c17e5091593d1bcd" category="inline-xref-macro">Adaptador de replicación de almacenamiento para almacenes de datos NFS y VMFS</block>
+  <block id="69b01101bcfd3614fddfcea5b74f9dc6" category="list-text"><block ref="69b01101bcfd3614fddfcea5b74f9dc6" category="inline-xref-macro-rx"></block></block>
+  <block id="b9d6ae6135cdf8b344d8f3007a4dd4f7" category="inline-xref-macro">Registro y anulación de registro del proveedor de VASA</block>
+  <block id="d93f7987b79ce491b08574815f61ecd5" category="list-text"><block ref="d93f7987b79ce491b08574815f61ecd5" category="inline-xref-macro-rx"></block></block>
+  <block id="c438af724e00215c2194b4fe908d2fc8" category="inline-xref-macro">Instalación del plugin VAAI</block>
+  <block id="97a2fae8ba4b71e8f3339671a87cae43" category="list-text"><block ref="97a2fae8ba4b71e8f3339671a87cae43" category="inline-xref-macro-rx"></block></block>
+  <block id="7be3e89a12c407757f33591ecfa434a2" category="inline-xref-macro">Descarga del paquete de registro para la instancia de vCenter seleccionada</block>
+  <block id="1bee80e7af7ea18f1f2303659d9efc2e" category="list-text"><block ref="1bee80e7af7ea18f1f2303659d9efc2e" category="inline-xref-macro-rx"></block></block>
+  <block id="04d09f3970ce5b984517e63432248ff1" category="inline-xref-macro">Soporte para variantes de implementación sencilla</block>
+  <block id="5cfcc1ff385f84f24c3dc51547a9b597" category="paragraph"><block ref="5cfcc1ff385f84f24c3dc51547a9b597" category="inline-xref-macro-rx"></block></block>
+  <block id="18387d76e8a1bb4a9d74e1cf14340019" category="paragraph">Puede incorporar rápidamente herramientas de ONTAP para VMware vSphere 10,1 y experimentar sus funciones mediante la opción de puesta en marcha sencilla. La recuperación basada en Snapshot está permitida en la sencilla implementación.</block>
+  <block id="1680bed1d13930544c4c6cdb3af4487a" category="inline-xref-macro">Interfaz de usuario del administrador de herramientas de ONTAP para todos los flujos de trabajo de administración de herramientas de ONTAP</block>
+  <block id="c629786128a204c47e6369a666c5ea58" category="paragraph"><block ref="c629786128a204c47e6369a666c5ea58" category="inline-xref-macro-rx"></block></block>
+  <block id="8e3b69ccee525c284e6777e83b4a2b3e" category="paragraph">El administrador de herramientas de ONTAP proporciona un mejor control al administrador de herramientas de ONTAP sobre las instancias gestionadas de vCenter y los back-ends de almacenamiento incorporados. El Gestor de herramientas de ONTAP ayuda en:</block>
+  <block id="a98a4446bda1eb97ecfbeeffcc7c02c0" category="list-text">Gestión de vCenter: Añada y gestione instancias de vCenter en las herramientas de ONTAP para VMware vSphere.</block>
+  <block id="7e4ead51058fcac66ebc38000cd94d4a" category="list-text">Gestión del back-end de almacenamiento: Añada y gestione clústeres de almacenamiento de ONTAP a herramientas de ONTAP para VMware vSphere y asígnelos a instancias de vCenter integradas a nivel global.</block>
+  <block id="7fd021fc4df26a773091018947aead5b" category="list-text">Gestión de certificados: Cambie el certificado autofirmado a un certificado de CA personalizado y renueve o actualice todos los certificados.</block>
+  <block id="d7472107bd93164aab58e7bdee6b4ee2" category="inline-xref-macro">Gestión de certificados</block>
+  <block id="d88f1919615bd3de82a8342579ba3f3c" category="paragraph"><block ref="d88f1919615bd3de82a8342579ba3f3c" category="inline-xref-macro-rx"></block></block>
+  <block id="247e7e53842997b527984ec99865ecb9" category="paragraph">Una instancia única de herramientas de ONTAP para VMware vSphere puede gestionar varias instancias de vCenter. Cuando se implementan herramientas de ONTAP para VMware vSphere, el certificado autofirmado se asigna a todas las instancias de vCenter de forma predeterminada. Cuando gestiona varias instancias de vCenter y desea habilitar la funcionalidad vVols en varias instancias de vCenter, debe cambiar el certificado autofirmado a un certificado de CA personalizado mediante la interfaz de ONTAP tools Manager. Puede usar la misma interfaz para renovar o actualizar todos los certificados.</block>
+  <block id="843dba768950bac1522c1c3eab661252" category="inline-xref-macro">Recuperación de objetivos de punto de recuperación cero</block>
+  <block id="52b85ddfb0b9961826a9834ac13a4114" category="paragraph"><block ref="52b85ddfb0b9961826a9834ac13a4114" category="inline-xref-macro-rx"></block></block>
+  <block id="ff2c82a591bded461a17d279e2c944f8" category="paragraph">Si pierde sus herramientas de ONTAP para la configuración de VMware vSphere, puede recuperar su configuración de herramientas de ONTAP mediante el software de gestión de datos ONTAP sin perder datos. No se admite la recuperación de RPO cero para las opciones de puesta en marcha sencilla.</block>
+  <block id="cadf71509a63142c48455fccc9e9d865" category="paragraph">Compatibilidad con el protocolo iSCSI para la puesta en marcha</block>
+  <block id="ee9ea56aafa616d28cd5dfdd999e115b" category="paragraph">Trident admite los protocolos NFS e iSCSI para aprovisionar volúmenes persistentes. Al implementar las herramientas de ONTAP para VMware vSphere, puede utilizar el protocolo iSCSI para almacenar datos de los servicios del proveedor VASA en volúmenes persistentes.</block>
+  <block id="3e68f004e881d64eee5503230989baef" category="paragraph">Compatibilidad con direcciones IPv6 para la incorporación de almacenamiento y vCenter</block>
+  <block id="21a0626546cb66a4a2685b4121ca68a2" category="paragraph">Puede incorporar back-ends de almacenamiento con direcciones IPv4, direcciones IPv6 o nombres de dominio completo (FQDN). Los servicios de almacenamiento y los servicios de proxy de almacenamiento utilizan credenciales incorporadas con las mismas direcciones IPv4 o IPv6 para comunicarse con la API REST DE ONTAP. Las rutas de datos son compatibles con direcciones IPv4, direcciones IPv6 o FQDN mediante reglas de políticas de exportación.</block>
+  <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">Notas de la versión</block>
 </blocks>
