@@ -1,17 +1,17 @@
 ---
-permalink: release-notes/otv-9-otv10-feature-comparison.html 
+permalink: release-notes/ontap-tools-9-ontap-tools-10-feature-comparison.html 
 sidebar: sidebar 
 keywords: release notes, feature, comparison 
-summary: Obtén más información sobre la comparación de características de OTV 9 y OTV 10 
+summary: Conozca las herramientas de ONTAP para VMware vSphere 9 y las herramientas de ONTAP para VMware vSphere 10 comparativas de las funciones 
 ---
-= Comparación de características de OTV 9 y OTV 10
+= Comparación de las herramientas de ONTAP para VMware vSphere 9 y las herramientas de ONTAP para VMware vSphere 10
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Aprenda si migrar de OTV 9 a OTV 10,1 es adecuado para usted. Para obtener la información más actualizada sobre compatibilidad, consulte https://mysupport.netapp.com/matrix["Herramienta de matriz de interoperabilidad de NetApp"^].
+Descubre si la migración de herramientas de ONTAP para VMware vSphere 9 a herramientas de ONTAP para VMware vSphere 10,1 es la opción adecuada. Para obtener la información más actualizada sobre compatibilidad, consulte https://mysupport.netapp.com/matrix["Herramienta de matriz de interoperabilidad de NetApp"^].
 
 [cols="20%,40%,40%"]
 |===
@@ -24,10 +24,10 @@ Aprenda si migrar de OTV 9 a OTV 10,1 es adecuado para usted. Para obtener la in
 | Cualificación de versiones de ONTAP | ONTAP 9.9,1 a ONTAP 9.15,1 | ONTAP 9.12,1 a ONTAP 9.14,1 
 
 
-| Compatibilidad con las versiones de VMware | VSphere 7.x-8.x SRM 8,5-9,0 | VSphere 7.x-8.x SRM 8,7-9,0 
+| Compatibilidad con las versiones de VMware | VSphere 7.x-8.x VMware Site Recovery Manager (SRM) 8,5 a Live Site Recovery 9,0 de VMware | VSphere 7.x-8.x VMware Site Recovery Manager (SRM) 8,7 a Live Site Recovery 9,0 de VMware 
 
 
-| Compatibilidad con protocolos | Almacenes de datos tradicionales: NFS (v3 y v4,1), VMFS (iSCSI y FCP) vVols: ISCSI, FCP, NVMe/FC, NFS v3 | Almacenes de datos tradicionales: NFS (v3 y v4,1), VMFS (iSCSI) vVols: ISCSI, NFS v3 
+| Compatibilidad con protocolos | Almacenes de datos NFS y VMFS: NFS (v3 y v4,1), almacenes de datos vVols de VMFS (iSCSI y FCP): ISCSI, FCP, NVMe/FC, NFS v3 | Almacenes de datos NFS y VMFS: NFS (v3 y v4,1), almacenes de datos vVols de VMFS (iSCSI): ISCSI, NFS v3 
 
 
 | Escalabilidad | Hosts y equipos virtuales: 300 hosts, hasta 10K equipos virtuales Almacenes de datos: 600 NFS, hasta 50 VMFS, hasta 250 vVols vVols: Hasta 14K | Hosts y máquinas virtuales: 600 hosts vVols: Hasta 140K TB 

@@ -15,6 +15,6 @@ Descubra las nuevas y mejoradas funciones disponibles en las herramientas de ONT
 
 Para obtener una lista completa de las nuevas funciones y mejoras, consulte xref:whats-new-otv-101.adoc[Novedades de las herramientas de ONTAP para VMware vSphere 10,1].
 
-Para obtener más información sobre si la migración de herramientas de ONTAP para VMware vSphere 9 a herramientas de ONTAP 10,1 es la adecuada para su puesta en marcha, consulte xref:otv-9-otv10-feature-comparison.adoc[Comparación de características de OTV 9 y OTV 10]. La migración es compatible con las herramientas de ONTAP para las versiones de VMware vSphere 9.10D2, 9.11D4, 9,12 y 9,13 a las herramientas de ONTAP 10,1.
+Para obtener más información sobre si la migración de herramientas de ONTAP para VMware vSphere 9 a herramientas de ONTAP 10,1 es la adecuada para su puesta en marcha, consulte xref:ontap-tools-9-ontap-tools-10-feature-comparison.adoc[Comparación de las herramientas de ONTAP para VMware vSphere 9 y las herramientas de ONTAP para VMware vSphere 10]. La migración es compatible con las herramientas de ONTAP para las versiones de VMware vSphere 9.10D2, 9.11D4, 9,12 y 9,13 a las herramientas de ONTAP 10,1.
 
 Para obtener más información sobre los problemas conocidos y las limitaciones de las herramientas de ONTAP para VMware vSphere 10,1, consulte la https://library.netapp.com/ecm/ecm_get_file/ECMLP3319071["Notas de la versión de ONTAP tools para VMware vSphere 10,1"^]. Debe iniciar sesión con su cuenta de NetApp o crear una cuenta para acceder a las Notas de la versión.

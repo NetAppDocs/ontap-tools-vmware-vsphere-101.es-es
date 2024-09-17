@@ -1,8 +1,8 @@
 ---
 permalink: release-notes/whats-new-otv-101.html 
 sidebar: sidebar 
-keywords: 'what"s new, release notes, otv, 10.1' 
-summary: Obtenga más información sobre las nuevas funcionalidades disponibles en OTV 10,1. 
+keywords: 'what"s new, release notes, otv, 10.1, ONTAP tools for VMware vSphere' 
+summary: Descubra las nuevas funcionalidades disponibles en las herramientas de ONTAP para VMware vSphere 10,1. 
 ---
 = Novedades de las herramientas de ONTAP para VMware vSphere 10,1
 :allow-uri-read: 
