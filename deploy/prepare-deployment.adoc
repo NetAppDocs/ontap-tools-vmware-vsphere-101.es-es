@@ -52,4 +52,5 @@ A continuación, se muestran las herramientas de ONTAP para los requisitos de VM
 .. Puerta de enlace IPv6 (opcional)
 
 
+. Antes de instalar las herramientas de ONTAP para VMware vSphere 10,1 en configuraciones no avanzadas de alta disponibilidad y alta disponibilidad, consulte el artículo de la base de conocimientos: https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/pre-requisites_for_installing_OTV_10.1_and_10.2_in_NonHA_Advanced_and_HA["Requisitos previos para una configuración sin alta disponibilidad avanzada y de alta disponibilidad"].
 

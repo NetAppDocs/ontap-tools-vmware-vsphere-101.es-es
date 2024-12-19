@@ -1823,4 +1823,6 @@
   <block id="8bc8491da19ddf762b07de3144d61829" category="cell">Almacenes de datos NFS y VMFS: NFS (v3 y v4,1), almacenes de datos vVols de VMFS (iSCSI): ISCSI, NFS v3</block>
   <block id="9f309a586570bbc1fff689704b3dad01" category="paragraph">Para obtener más información sobre si la migración de herramientas de ONTAP para VMware vSphere 9 a herramientas de ONTAP 10,1 es la adecuada para su puesta en marcha, consulte <block ref="947428ca1064f8d19137fb8976698998" category="inline-xref-macro-rx"></block>. La migración es compatible con las herramientas de ONTAP para las versiones de VMware vSphere 9.10D2, 9.11D4, 9,12 y 9,13 a las herramientas de ONTAP 10,1.</block>
   <block id="ed8359854c43609fca7bc8a46cca9eac" category="sidebar">Comparación de las funciones de ONTAP Tools 9 y ONTAP Tools 10</block>
+  <block id="f6e2644fce556a8207829c90c0760e9e" category="inline-link">Requisitos previos para una configuración sin alta disponibilidad avanzada y de alta disponibilidad</block>
+  <block id="1194197b73e30573b06eeec54d3ca76d" category="list-text">Antes de instalar las herramientas de ONTAP para VMware vSphere 10,1 en configuraciones no avanzadas de alta disponibilidad y alta disponibilidad, consulte el artículo de la base de conocimientos:<block ref="e4dee65de4069a83bb14c7c7d5ee3ead" category="inline-link-rx"></block>.</block>
 </blocks>
