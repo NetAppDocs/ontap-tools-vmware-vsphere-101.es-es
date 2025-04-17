@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: Documentación de las herramientas de ONTAP para VMware vSphere
+  title: Documentación de las herramientas de ONTAP para VMware vSphere 10,1
   lead: Las herramientas de ONTAP para VMware vSphere permiten configurar, gestionar
     y proteger los almacenes de datos virtuales en el entorno de vCenter Server.
   tiles:
